@@ -1,0 +1,4 @@
+.list__textButtons {
+    display: flex;
+    flex-wrap: wrap;
+}

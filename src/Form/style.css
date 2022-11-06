@@ -1,0 +1,47 @@
+.form__taskSubmit {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
+}
+
+@media (max-width: 767px) {
+    .form__taskSubmit {
+        grid-template-columns: 1fr;
+    }
+}
+
+.form__newTask {
+    padding: 10px;
+    border: 1px solid lightgray;
+}
+
+@media (max-width: 767px) {
+    .form__newTask {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+.form__button {
+    border: none;
+    background-color: teal;
+    color: white;
+    padding: 10px;
+    transition: 1s;
+}
+
+.form__button:hover {
+    background: hsl(180, 100%, 30%);
+    transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+    .form__button:hover {
+        transform: scale(1.0);
+    }
+}
+
+.form__button:active {
+    background: hsl(180, 100%, 35%);
+}
