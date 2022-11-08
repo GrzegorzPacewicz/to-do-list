@@ -2,33 +2,29 @@
     margin: 10px 0;
     background: white;
     transition: 2s;
-
 }
 
 .section__header {
-    font-size: 20px;
     padding: 20px;
-    margin: 0;
-    }
-
-.section__body{
-    padding: 20px;
+    border-bottom: 3px solid #eee;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.section__buttonsContainer {
-    padding: 20px;
-	border-bottom: 3px solid #eee;
+.section__title {
+    font-size: 20px;
+    padding: 10px;
+    margin: 0;
+}
+
+.section__body {
+    padding: 10px;
 }
 
 @media (max-width: 767px) {
-	.ssection__buttonsContainer {
-		grid-template-columns: 1fr;
-	}
-}
-
-.section__buttonsContainer--grid {
-    display: grid;
-	grid-template-columns: auto auto;
-	justify-content: space-between;
-	align-items: center;
+    .ssection__buttonsContainer {
+        grid-template-columns: 1fr;
+    }
 }

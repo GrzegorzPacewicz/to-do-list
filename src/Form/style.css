@@ -1,5 +1,5 @@
-.form__taskSubmit {
-    padding: 20px;
+.form {
+    padding: 10px;
     display: grid;
     grid-template-columns: 1fr auto;
     grid-gap: 20px;

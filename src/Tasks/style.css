@@ -1,9 +1,9 @@
-.list {
+.tasks {
     list-style-type: none;
     padding: 0px;
 }
 
-.list__container {
+.tasks__container {
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-gap: 10px;
@@ -13,7 +13,7 @@
 }
 
 @media (max-width: 767px) {
-    .list__textButtons {
+    .tasks__textButtons {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -21,7 +21,7 @@
     }
 }
 
-.list__textButtonsButton {
+.tasks__textButtonsButton {
      border: none;
     background-color: transparent;
     color: hsl(180, 100%, 25%);
@@ -30,38 +30,37 @@
 }
 
 @media (max-width: 767px) {
-    .list__textButtonsButton {
+    .tasks__textButtonsButton {
         flex-wrap: wrap;
     }
 }
 
-
-.list__textButtonsButton:hover {
+.tasks__textButtonsButton:hover {
     color: hsl(180, 100%, 30%);
 }
 
-.list__textButtonsButton:active {
+.tasks__textButtonsButton:active {
     color: hsl(180, 100%, 35%);
 }
 
-.list__textButtonsButton:disabled {
+.tasks__textButtonsButton:disabled {
     color: #aaa;
 }
 
-.list__item {
+.tasks__item {
     word-break: break-word;
     align-items: center;
 }
 
-.list__item--hidden {
+.tasks__item--hidden {
     display: none;
 }
 
-.list__item--done {
+.tasks__item--done {
     text-decoration: line-through;
 }
 
-.list__button {
+.tasks__button {
     border: none;
     color: white;
     width: 30px;
@@ -70,27 +69,27 @@
     transition: 1s;
 }
 
-.list__button--done {
+.tasks__button--done {
     background-color: hsl(120, 100%, 30%);
 }
 
-.list__button--done:hover {
+.tasks__button--done:hover {
     background-color: hsl(120, 100%, 38%);
 }
 
-.list__button--done:active {
+.tasks__button--done:active {
     background-color: hsl(120, 100%, 46%);
 }
 
-.list__button--remove {
+.tasks__button--remove {
     background-color: hsl(0, 100%, 40%);
     transition: 2s;
 }
 
-.list__button--remove:hover {
+.tasks__button--remove:hover {
     background-color: hsl(0, 100%, 55%);
 }
 
-.list__button--remove:active {
+.tasks__button--remove:active {
     background-color: hsl(0, 100%, 65%);
 }

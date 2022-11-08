@@ -1,4 +1,22 @@
-.list__textButtons {
+.buttons {
     display: flex;
     flex-wrap: wrap;
+}
+.buttons__button {
+    border: none;
+    background-color: transparent;
+    color: hsl(180, 100%, 25%);
+    transition: color 0.5s;
+    margin: 0 0 0 20px;
+}
+.buttons__button:hover {
+    color: hsl(180, 100%, 30%);
+}
+
+.buttons__button:active {
+    color: hsl(180, 100%, 35%);
+}
+
+.buttons__button:disabled {
+    color: #aaa;
 }
