@@ -12,41 +12,6 @@
     align-items: center;
 }
 
-@media (max-width: 767px) {
-    .tasks__textButtons {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-.tasks__textButtonsButton {
-     border: none;
-    background-color: transparent;
-    color: hsl(180, 100%, 25%);
-    transition: color 0.5s;
-    margin: 0 0 0 20px;
-}
-
-@media (max-width: 767px) {
-    .tasks__textButtonsButton {
-        flex-wrap: wrap;
-    }
-}
-
-.tasks__textButtonsButton:hover {
-    color: hsl(180, 100%, 30%);
-}
-
-.tasks__textButtonsButton:active {
-    color: hsl(180, 100%, 35%);
-}
-
-.tasks__textButtonsButton:disabled {
-    color: #aaa;
-}
-
 .tasks__item {
     word-break: break-word;
     align-items: center;
