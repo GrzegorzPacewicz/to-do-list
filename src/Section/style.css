@@ -5,12 +5,23 @@
 }
 
 .section__header {
-    padding: 20px;
+    padding: 10px 20px;
     border-bottom: 3px solid #eee;
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-between;
     align-items: center;
+}
+
+
+
+@media (max-width: 767px) {
+    .section__header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto auto;
+    }
+
 }
 
 .section__title {
@@ -24,7 +35,7 @@
 }
 
 @media (max-width: 767px) {
-    .ssection__buttonsContainer {
+    .ssection__body {
         grid-template-columns: 1fr;
     }
 }

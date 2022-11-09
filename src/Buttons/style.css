@@ -2,13 +2,22 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+@media (max-width: 767px) {
+    .buttons {
+        display: grid;
+    }
+}
+
 .buttons__button {
     border: none;
+    padding: 10px;
     background-color: transparent;
     color: hsl(180, 100%, 25%);
     transition: color 0.5s;
     margin: 0 0 0 20px;
 }
+
 .buttons__button:hover {
     color: hsl(180, 100%, 30%);
 }
