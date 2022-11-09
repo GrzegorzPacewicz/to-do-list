@@ -15,6 +15,10 @@ The project I make during FrondEndDeveloper course: https://youcode.pl/frontend-
 6. If you press "Ukryj ukończone" all finished tasks will be disabled
 7. If you press "Pokaż ukończone" all finished tasks will be displayed
 
+## Demo
+
+![Demonstration](./src/images/demo2.gif)!
+
 ## Technologies used
 - html,
 - css
@@ -25,7 +29,6 @@ The project I make during FrondEndDeveloper course: https://youcode.pl/frontend-
 - arrow functions
 - md
 - React
-
 
 ## Getting Started with Create React App
 
