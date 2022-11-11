@@ -30,11 +30,9 @@
     color: white;
     width: 30px;
     height: 30px;
+    cursor: pointer;
     padding: 0;
-    transition: 1s;
-}
-
-.tasks__button--done {
+    transition: 1s; 
     background-color: hsl(120, 100%, 30%);
 }
 

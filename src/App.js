@@ -48,14 +48,15 @@ function App() {
             tasks={tasks}
             hideDone={hideDone}
             toggleHideDone={toggleHideDone}
-            toggleTaskDone={toggleTaskDone}
           />
         }
         body={
           <Tasks
             tasks={tasks}
             hideDone={hideDone}
-            removeTask={removeTask} />
+            removeTask={removeTask}
+            toggleTaskDone={toggleTaskDone}
+          />
         }
       />
     </Container>
