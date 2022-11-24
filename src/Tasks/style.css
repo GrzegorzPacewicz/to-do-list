@@ -37,7 +37,6 @@
 
 .tasks__button--done {
     background-color: hsl(120, 100%, 30%);
-    border: 5px;
 }
 
 .tasks__button--done:hover {
