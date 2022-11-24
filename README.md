@@ -17,7 +17,7 @@ The project I make during FrondEndDeveloper course: https://youcode.pl/frontend-
 
 ## Demo
 
-![Demonstration](./src/images/demo2.gif)
+![Demonstration](demo2.gif)
 
 ## Technologies used
 - html,
