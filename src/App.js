@@ -17,7 +17,7 @@ const getLocalStorageHideDone = () => {
 }
 
 function App() {
-  const [hideDone, setHideDone] = useState(false, getLocalStorageHideDone);
+  const [hideDone, setHideDone] = useState(getLocalStorageHideDone);
   const [tasks, setTasks] = useState(getLocalStorageTasks);
  
   useEffect(() => {
