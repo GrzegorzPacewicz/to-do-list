@@ -11,13 +11,22 @@ const getLocalStorageTasks = () => {
   return localStorageTasks ? JSON.parse(localStorageTasks) : [] ;
 }
 
-function App() {
-  const [hideDone, setHideDone] = useState(false);
-  const [tasks, setTasks] = useState(getLocalStorageTasks);
+const getLocalStorageHideDone = () => {
+  const localStorageHideDone = localStorage.getItem("hideDone");
+  return localStorageHideDone ? JSON.parse(localStorageHideDone) : [] ;
+}
 
+function App() {
+  const [hideDone, setHideDone] = useState(false, getLocalStorageHideDone);
+  const [tasks, setTasks] = useState(getLocalStorageTasks);
+ 
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks))
   }, [tasks]);
+
+  useEffect(() => {
+    localStorage.setItem("hideDone", JSON.stringify(hideDone))
+  }, [hideDone]);
 
   const toggleHideDone = () => {
     setHideDone((hideDone) => !hideDone);
