@@ -6,26 +6,20 @@ import Header from "./Header";
 import Container from "./Container";
 import { useState, useEffect } from "react";
 
-const getLocalStorageTasks = () => {
-  const localStorageTasks = localStorage.getItem("tasks");
-  return localStorageTasks ? JSON.parse(localStorageTasks) : [] ;
-}
-
-const getLocalStorageHideDone = () => {
-  const localStorageHideDone = localStorage.getItem("hideDone");
-  return localStorageHideDone ? JSON.parse(localStorageHideDone) : [] ;
-}
-
 function App() {
-  const [hideDone, setHideDone] = useState(getLocalStorageHideDone);
-  const [tasks, setTasks] = useState(getLocalStorageTasks);
- 
+  const [hideDone, setHideDone] = useState(
+    JSON.parse(localStorage.getItem("hideDone")) || []
+  );
+  const [tasks, setTasks] = useState(
+    JSON.parse(localStorage.getItem("tasks")) || []
+  );
+
   useEffect(() => {
-    localStorage.setItem("tasks", JSON.stringify(tasks))
+    localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
 
   useEffect(() => {
-    localStorage.setItem("hideDone", JSON.stringify(hideDone))
+    localStorage.setItem("hideDone", JSON.stringify(hideDone));
   }, [hideDone]);
 
   const toggleHideDone = () => {
@@ -67,7 +61,7 @@ function App() {
       },
     ]);
   };
-  
+
   return (
     <Container>
       <Header title="Lista zadań" />
@@ -84,7 +78,7 @@ function App() {
             tasks={tasks}
             hideDone={hideDone}
             removeTask={removeTask}
-            toggleTaskDone={toggleTaskDone}            
+            toggleTaskDone={toggleTaskDone}
           />
         }
         extraHeaderContent={
