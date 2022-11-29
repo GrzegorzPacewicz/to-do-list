@@ -11,11 +11,18 @@ const getLocalStorageHideDone = () => {
   return localStorageHideDone ? JSON.parse(localStorageHideDone) : [];
 };
 
+const getInitialTasks = () => {
+  const tasksFromLocalStorage = localStorage.getItem("tasks");
+
+  return tasksFromLocalStorage ? JSON.parse(tasksFromLocalStorage) : [];
+};
+
 function App() {
   const [hideDone, setHideDone] = useState(getLocalStorageHideDone);
-  const [tasks, setTasks] = useState(
-    JSON.parse(localStorage.getItem("tasks")) || []
-  );
+  // const [tasks, setTasks] = useState(
+  //   JSON.parse(localStorage.getItem("tasks")) || []
+  // );
+  const [tasks, setTasks] = useState(getInitialTasks);
 
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
