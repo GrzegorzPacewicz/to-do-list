@@ -6,22 +6,10 @@ import Header from "./Header";
 import Container from "./Container";
 import { useState, useEffect } from "react";
 
-// const getLocalStorageHideDone = () => {
-//   const localStorageHideDone = localStorage.getItem("hideDone");
-//   return localStorageHideDone ? JSON.parse(localStorageHideDone) : [];
-// };
-
-// const getInitialTasks = () => {
-//   const tasksFromLocalStorage = localStorage.getItem("tasks");
-//   return tasksFromLocalStorage ? JSON.parse(tasksFromLocalStorage) : [];
-// };
-
 const getLocalStorageData = (propertyName) =>
   JSON.parse(localStorage.getItem(propertyName));
 
 function App() {
-  // const [hideDone, setHideDone] = useState(getLocalStorageHideDone);
-  // const [tasks, setTasks] = useState(getInitialTasks);
 
   const [tasks, setTasks] = useState(getLocalStorageData("tasks") || []);
   const [hideDone, setHideDone] = useState(getLocalStorageData("hideDone"));
