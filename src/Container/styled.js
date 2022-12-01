@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const GeneralContainer = styled.main`
+export const Wrapper = styled.main`
   font-family: "Montserrat", sans-serif;
   max-width: 900px;
   background-color: #eee;

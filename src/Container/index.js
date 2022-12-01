@@ -1,10 +1,10 @@
-import { GeneralContainer } from "./styled";
+import { Wrapper } from "./styled";
 
 
 const Container = ({ children }) => (
-    <GeneralContainer>
+    <Wrapper>
         {children}
-    </GeneralContainer>
+    </Wrapper>
 );
 
 export default Container;

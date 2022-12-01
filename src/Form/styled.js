@@ -30,7 +30,8 @@ export const FormButton = styled.button`
 
   @media (max-width: 767px) {
     width: 100%;
-    margin: auto;
+    margin: auto; 
+    transform: scale(1)
   }
 
   &:hover {
@@ -38,11 +39,7 @@ export const FormButton = styled.button`
     transform: scale(1.05);
   }
 
-  @media (max-width: 767px) {
-    transform: scale(1);
-  }
-
-  &:active {
+   &:active {
     background: hsl(180, 100%, 35%);
   }
 `;
