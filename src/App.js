@@ -5,62 +5,35 @@ import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
 import { useState, useEffect } from "react";
+import { useTasks } from "./useTasks";
 
-const getLocalStorageData = (propertyName) =>
-  JSON.parse(localStorage.getItem(propertyName));
+const getLocalStorageData = (hideDone) =>
+  JSON.parse(localStorage.getItem(hideDone));
 
 function App() {
 
-  const [tasks, setTasks] = useState(getLocalStorageData("tasks") || []);
-  const [hideDone, setHideDone] = useState(getLocalStorageData("hideDone"));
+  // const [tasks, setTasks] = useState(getLocalStorageData("tasks") || []);
+ const [hideDone, setHideDone] = useState(getLocalStorageData("hideDone"));
 
-  useEffect(() => {
-    localStorage.setItem("tasks", JSON.stringify(tasks));
-  }, [tasks]);
+  // useEffect(() => {
+  //   localStorage.setItem("tasks", JSON.stringify(tasks));
+  // }, [tasks]);
 
   useEffect(() => {
     localStorage.setItem("hideDone", JSON.stringify(hideDone));
-  }, [hideDone]);
+  });
 
   const toggleHideDone = () => {
     setHideDone((hideDone) => !hideDone);
   };
 
-  const removeTask = (id) => {
-    setTasks((tasks) => tasks.filter((task) => task.id !== id));
-  };
-
-  const toggleTaskDone = (id) => {
-    setTasks((tasks) =>
-      tasks.map((task) => {
-        if (task.id === id) {
-          return { ...task, done: !task.done };
-        }
-
-        return task;
-      })
-    );
-  };
-
-  const setAllDone = () => {
-    setTasks((tasks) =>
-      tasks.map((task) => ({
-        ...task,
-        done: true,
-      }))
-    );
-  };
-
-  const addNewTask = (content) => {
-    setTasks((tasks) => [
-      ...tasks,
-      {
-        content,
-        done: false,
-        id: tasks.length ? tasks[tasks.length - 1].id + 1 : 1,
-      },
-    ]);
-  };
+ const {
+  tasks,
+  addNewTask,
+  removeTask,
+  setAllDone,
+  toggleTaskDone,
+} = useTasks();
 
   return (
     <Container>
