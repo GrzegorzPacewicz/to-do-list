@@ -1,13 +1,9 @@
 import { useEffect, useState } from "react";
 
 export const useTasks = () => {
-    const [tasks, setTasks] = useState(JSON.parse(localStorage.getItem("tasks")) || []);
-    
-    // const [hideDone, setHideDone] = useState(getLocalStorageData("hideDone"));
-
-    // useEffect(() => {
-    //     localStorage.setItem("hideDone", JSON.stringify(hideDone));
-    //   });
+  const [tasks, setTasks] = useState(
+    JSON.parse(localStorage.getItem("tasks")) || []
+  );
 
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
@@ -23,6 +19,7 @@ export const useTasks = () => {
       },
     ]);
   };
+  
   const removeTask = (id) => {
     setTasks((tasks) => tasks.filter((task) => task.id !== id));
   };
