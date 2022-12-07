@@ -6,7 +6,7 @@ export const SectionStyled = styled.section`
   transition: 2s;
 `;
 
-export const SectionHeader = styled.header`
+export const Header = styled.header`
   padding: 10px 20px;
   border-bottom: 3px solid #eee;
   display: grid;
@@ -21,7 +21,7 @@ export const SectionHeader = styled.header`
   }
 `;
 
-export const SectionTitle = styled.h2`
+export const Title = styled.h2`
   font-size: 20px;
   padding: 10px;
   margin: 0;
