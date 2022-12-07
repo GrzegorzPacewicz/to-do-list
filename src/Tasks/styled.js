@@ -38,18 +38,18 @@ export const Button = styled.button`
   cursor: pointer;
   padding: 0;
   transition: 0.6s;
+`;
 
-  ${({toggleDone}) => toggleDone && css`
+export const ButtonToggleDone = styled(Button)`
   background: hsl(120, 100%, 30%);
   &:hover {
     background: hsl(120, 100%, 38%);
   }
-  `}
+`;
 
-  ${({remove}) => remove && css`
+export const ButtonRemove = styled(Button)`
   background: hsl(0, 100%, 40%);
- &:hover{
+  &:hover {
     background: hsl(0, 100%, 55%);
- }
-  `}
+  }
 `;
