@@ -32,7 +32,7 @@ export const Content = styled.span`
 
 export const Button = styled.button`
   border: none;
-  color: white;
+  color: ${({ theme }) => theme.color.white};
   width: 30px;
   height: 30px;
   cursor: pointer;

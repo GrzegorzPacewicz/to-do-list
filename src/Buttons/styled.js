@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-export const ButtonsContainer = styled.div`
+export const Wrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     display: grid;
   }
 `;
@@ -13,18 +13,23 @@ export const Button = styled.button`
   border: none;
   padding: 10px;
   background-color: transparent;
-  color: hsl(180, 100%, 25%);
+  color: ${({ theme }) => theme.color.teal}
   transition: color 0.5s;
   margin: 0 0 0 20px;
 
+  @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    flex-basis: 100%;
+    margin: 10px;
+  }
+
   &:hover {
-    color: hsl(180, 100%, 30%);
+    filter: brightness(110%);
   }
 
   &:active {
-    color: hsl(180, 100%, 35%);
+    filter: brightness(120%);
   }
   &:disabled {
-    color: #aaa;
+    color: ${({ theme }) => theme.color.silver}
   }
 `;

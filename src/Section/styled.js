@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const SectionStyled = styled.section`
   margin: 10px 0;
-  background: white;
+  background: ${({ theme }) => theme.color.white};
   transition: 2s;
 `;
 
 export const Header = styled.header`
   padding: 10px 20px;
-  border-bottom: 3px solid #eee;
+  border-bottom: 3px solid ${({ theme }) => theme.color.alto};
   display: grid;
   grid-template-columns: auto auto;
   justify-content: space-between;
@@ -30,7 +30,7 @@ export const Title = styled.h2`
 export const SectionBody = styled.div`
   padding: 10px;
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     grid-template-columns: 1fr;
   }
 `;
