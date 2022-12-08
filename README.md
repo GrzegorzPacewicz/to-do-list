@@ -29,6 +29,9 @@ The project I make during FrondEndDeveloper course: https://youcode.pl/frontend-
 - arrow functions
 - md
 - React
+- styled components
+- useRef, useState, useEffect
+- custom hook
 
 ## Getting Started with Create React App
 
