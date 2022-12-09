@@ -16,6 +16,7 @@ export const Button = styled.button`
   color: ${({ theme }) => theme.color.teal};
   transition: color 0.5s;
   margin: 0 0 0 20px;
+  cursor: pointer;
 
   @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     flex-basis: 100%;
@@ -30,6 +31,7 @@ export const Button = styled.button`
     filter: brightness(120%);
   }
   &:disabled {
-    color: ${({ theme }) => theme.color.silver}
+    color: ${({ theme }) => theme.color.silver};
+    cursor: not-allowed;
   }
 `;

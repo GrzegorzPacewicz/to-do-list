@@ -21,6 +21,7 @@ export const FormButton = styled.button`
   color: ${({ theme }) => theme.color.white};
   padding: 10px;
   transition: 1s;
+  cursor: pointer;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     width: 100%;
