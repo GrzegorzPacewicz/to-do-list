@@ -32,6 +32,7 @@ The project I make during FrondEndDeveloper course: https://youcode.pl/frontend-
 - styled components
 - useRef, useState, useEffect
 - custom hook
+- local storage
 
 ## Getting Started with Create React App
 
