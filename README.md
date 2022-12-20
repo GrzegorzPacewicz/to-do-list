@@ -20,7 +20,7 @@ The project I make during FrondEndDeveloper course: https://youcode.pl/frontend-
 ![Demonstration](demo2.gif)
 
 ## Technologies used
-- html,
+- html
 - css
 - js
 - BEM
@@ -33,6 +33,7 @@ The project I make during FrondEndDeveloper course: https://youcode.pl/frontend-
 - useRef, useState, useEffect
 - custom hook
 - local storage
+- Redux
 
 ## Getting Started with Create React App
 
