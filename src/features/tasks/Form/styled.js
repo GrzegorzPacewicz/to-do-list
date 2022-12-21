@@ -21,20 +21,20 @@ export const FormButton = styled.button`
   color: ${({ theme }) => theme.color.white};
   padding: 10px;
   transition: 1s;
-  transform: scale(1.05);
   cursor: pointer;
-
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-    width: 100%;
-    margin: auto;
-    transform: scale(1);
-  }
-
+ 
   &:hover {
     filter: brightness(110%);
+    transform: scale(1.05);
      }
 
   &:active {
     filter: brightness(120%);
+  } 
+  
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    width: 100%;
+    margin: auto;
+    transform: scale(1);
   }
 `;
