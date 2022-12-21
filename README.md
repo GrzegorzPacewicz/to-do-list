@@ -23,17 +23,18 @@ The project I make during FrondEndDeveloper course: https://youcode.pl/frontend-
 - html
 - css
 - js
-- BEM
+- bem
 - flex
 - grid
 - arrow functions
 - md
-- React
+- react
 - styled components
 - useRef, useState, useEffect
 - custom hook
 - local storage
-- Redux
+- redux
+- saga
 
 ## Getting Started with Create React App
 
