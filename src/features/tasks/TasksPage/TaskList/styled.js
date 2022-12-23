@@ -53,3 +53,7 @@ export const ButtonRemove = styled(Button)`
     background: hsl(0, 100%, 55%);
   }
 `;
+
+// export const Link = styled.a`
+// color: black;
+// `;
