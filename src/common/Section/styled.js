@@ -23,12 +23,12 @@ export const Header = styled.header`
 
 export const Title = styled.h2`
   font-size: 20px;
-  padding: 10px;
+  padding: 10px 0;
   margin: 0;
 `;
 
 export const SectionBody = styled.div`
-  padding: 10px;
+  padding: 10px 20px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     grid-template-columns: 1fr;
