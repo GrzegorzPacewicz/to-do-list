@@ -18,18 +18,16 @@ export const Ul = styled.ul`
 `;
 
 export const Li = styled.li`
-  /* color: ${({ theme }) => theme.color.white}; */
+  color: ${({ theme }) => theme.color.white};
   font-size: 20px;
-  padding: 10px;
-  color: white;
+  padding: 10px 20px;
 `;
 
 export const StyledNavLink = styled(NavLink).attrs(() => ({
   activeClassName,
 }))`
-
-color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 
   &.${activeClassName} {
     font-weight: bold;

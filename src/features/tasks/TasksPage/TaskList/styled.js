@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 
 export const List = styled.ul`
@@ -51,5 +52,14 @@ export const ButtonRemove = styled(Button)`
   background: hsl(0, 100%, 40%);
   &:hover {
     background: hsl(0, 100%, 55%);
+  }
+`;
+
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: ${({ theme }) => theme.color.black};
+  &:hover {
+    transition: 0.5s;
+    color: ${({ theme }) => theme.color.teal};
   }
 `;
