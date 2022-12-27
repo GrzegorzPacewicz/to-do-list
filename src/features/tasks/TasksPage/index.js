@@ -5,7 +5,7 @@ import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 import { Container } from "../../../common/Container/styled";
 import Search from "./Search";
-import { Button, Wrapper } from "./Buttons/styled";
+import { Button } from "./Buttons/styled";
 import { useDispatch } from "react-redux";
 import { fetchExampleTasks } from "../tasksSlice";
 
