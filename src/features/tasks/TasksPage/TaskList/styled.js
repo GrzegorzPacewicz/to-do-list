@@ -10,7 +10,7 @@ export const Item = styled.ul`
   display: grid;
   grid-template-columns: auto 1fr auto;
   grid-gap: 10px;
-  padding: 10px;
+  padding: 10px 0;
   border-bottom: 1px solid #ddd;
   align-items: center;
   word-break: break-word;
@@ -53,7 +53,3 @@ export const ButtonRemove = styled(Button)`
     background: hsl(0, 100%, 55%);
   }
 `;
-
-// export const Link = styled.a`
-// color: black;
-// `;
