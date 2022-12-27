@@ -6,9 +6,9 @@ import {
   selectHideDone,
   selectIsEveryTaskDone,
   selectAreTasksEmpty,
-  fetchExampleTasks,
 } from "../../tasksSlice";
-import { Wrapper, Button } from "./styled";
+import { Wrapper } from "./styled";
+import { Button } from "../../../../common/Button/styled";
 
 const Buttons = () => {
   const hideDone = useSelector(selectHideDone);
@@ -19,9 +19,6 @@ const Buttons = () => {
 
   return (
     <Wrapper>
-      <Button onClick={() => dispatch(fetchExampleTasks())}>
-        Pobierz przykładowe zadanie
-      </Button>
       {!areTasksEmpty && (
         <>
           <Button onClick={() => dispatch(toggleHideDone())}>
