@@ -5,9 +5,10 @@ import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 import { Container } from "../../../common/Container/styled";
 import Search from "./Search";
-import { Button } from "../../../common/Button/styled";  
+import { StyledButton } from "../../../common/Button/styled";
 import { useDispatch } from "react-redux";
 import { fetchExampleTasks } from "../tasksSlice";
+import ExampleTasks from "./ExampleTasks";
 
 function TasksPage() {
   const dispatch = useDispatch();
@@ -18,11 +19,7 @@ function TasksPage() {
 
       <Section
         title="Dodaj nowe zadanie"
-        extraHeaderContent={
-          <Button onClick={() => dispatch(fetchExampleTasks())}>
-            Pobierz przykładowe zadania
-          </Button>
-        }
+        extraHeaderContent={<ExampleTasks />}
         body={<Form />}
       />
 
