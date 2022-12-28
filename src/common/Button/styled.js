@@ -9,7 +9,7 @@ export const Button = styled.button`
   margin: 0 0 0 20px;
   cursor: pointer;
 
-  @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     flex-basis: 100%;
     margin: 0;
   }
@@ -23,6 +23,5 @@ export const Button = styled.button`
   }
   &:disabled {
     color: ${({ theme }) => theme.color.silver};
-    cursor: not-allowed;
   }
 `;
