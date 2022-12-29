@@ -57,7 +57,7 @@ export const ButtonRemove = styled(Button)`
 
 export const StyledLink = styled(Link)`
   text-decoration: none;
-  color: ${({ theme }) => theme.color.black};
+  color: ${({ theme }) => theme.color.forestGreen};
   &:hover {
     transition: 0.5s;
     color: ${({ theme }) => theme.color.teal};
