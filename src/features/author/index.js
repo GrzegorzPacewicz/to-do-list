@@ -20,7 +20,7 @@ function AuthorPage() {
               alt="Zdjęcie Grzegorza Pacewicza"
             />
             <Text>
-              <Paragraph>Cześć! Fajnie, że tu zajrzałeś!🤩  </Paragraph>
+              <Paragraph>Cześć! Fajnie, że tu zajrzałeś!🤩 </Paragraph>
               <Paragraph>
                 Jestem Grzesiek. Mieszkam w Szczytnie. Moją ogromną pasją jest{" "}
                 <strong>speedcubing</strong>, czyli układanie kostki Rubika na
@@ -30,8 +30,10 @@ function AuthorPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Do tej pory na zawodach speecubingowych zdobyłem 12 medali. 😎
+                  Do tej pory na zawodach speecubingowych zdobyłem 12 medali.😎
                 </Link>{" "}
+              </Paragraph>
+              <Paragraph>
                 Ze speedcubingiem jestem związany dość mocno, bo do tego
                 prowadzę{" "}
                 <Link
