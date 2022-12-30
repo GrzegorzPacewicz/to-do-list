@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   display: flex;
   align-items: center;
+  
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    flex-direction: column;
+  }
 `;
 
 export const Image = styled.img`
@@ -11,7 +15,7 @@ export const Image = styled.img`
   box-shadow: 5px 5px 10px #aab;
 `;
 
-export const Text = styled.p`
+export const Text = styled.div`
   line-height: 150%;
   margin: 0 20px;
   text-align: justify;
