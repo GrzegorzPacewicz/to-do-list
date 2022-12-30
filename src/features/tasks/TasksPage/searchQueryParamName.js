@@ -1,3 +1,3 @@
-const searchQueryParamName = "szukaj";
+const searchQueryParamName = "filtruj zadania";
 
 export default searchQueryParamName;
