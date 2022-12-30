@@ -35,10 +35,12 @@ const tasksSlice = createSlice({
 
     fetchExampleTasks: (state) => {
       state.loading = true;
+      state.loading = "ładowanie";
     },
 
     fetchExampleTasksError: (state) => {
       state.loading = false;
+      state.error = "Coś poszło nie tak";
     },
 
     fetchExampleTasksSuccess: (state, { payload: tasks }) => {
@@ -66,7 +68,7 @@ export const selectAreTasksEmpty = (state) => selectTasks(state).length === 0;
 export const selectIsEveryTaskDone = (state) =>
   selectTasks(state).every(({ done }) => done);
 export const selectLoading = (state) => selectTasksState(state).loading;
-// export const selectError = (state) => selectTasksState(state).loading;
+export const selectError = (state) => selectTasksState(state).error;
 
 export const getTaskById = (state, taskId) =>
   selectTasks(state).find(({ id }) => id === taskId);
