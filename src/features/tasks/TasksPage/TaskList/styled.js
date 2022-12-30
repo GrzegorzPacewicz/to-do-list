@@ -43,6 +43,7 @@ export const Button = styled.button`
 
 export const ButtonToggleDone = styled(Button)`
   background: hsl(120, 100%, 30%);
+  color: ${({ theme }) => theme.color.white};
   &:hover {
     background: hsl(120, 100%, 38%);
   }
@@ -50,6 +51,7 @@ export const ButtonToggleDone = styled(Button)`
 
 export const ButtonRemove = styled(Button)`
   background: hsl(0, 100%, 40%);
+  color: ${({ theme }) => theme.color.white};
   &:hover {
     background: hsl(0, 100%, 55%);
   }
