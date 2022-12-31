@@ -1,6 +1,6 @@
 # ToDoList
 
-## Demo version: https://grzegorzpacewicz.github.io/todolists-react/
+## [Demo version (click!)] (https://grzegorzpacewicz.github.io/todolists-react/)
 
 ## Basic Info
 The project I make during FrondEndDeveloper course: https://youcode.pl/frontend-developer-od-podstaw
@@ -35,6 +35,7 @@ The project I make during FrondEndDeveloper course: https://youcode.pl/frontend-
 - local storage
 - redux
 - saga
+- react router
 
 ## Getting Started with Create React App
 
