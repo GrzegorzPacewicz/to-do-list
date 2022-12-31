@@ -14,6 +14,10 @@ The project I make during FrondEndDeveloper course: https://youcode.pl/frontend-
 5. If you press "ukończ wszystkie zadania" all tasks will be marked as finished
 6. If you press "Ukryj ukończone" all finished tasks will be disabled
 7. If you press "Pokaż ukończone" all finished tasks will be displayed
+8. Press in task to see details
+9. If you press "Pobierz przykładowe zadania" there will be displayed example tasks
+10. "O autorze" section is about the author
+
 
 ## Demo
 
