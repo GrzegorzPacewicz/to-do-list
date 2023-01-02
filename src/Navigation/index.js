@@ -1,4 +1,5 @@
 import { Nav, Ul, Li, StyledNavLink } from "./styled";
+import { toAuthor, toTasks } from "../routes";
 
 function Navigation() {
   return (
@@ -6,11 +7,11 @@ function Navigation() {
       <Ul>
         <Li>
           {" "}
-          <StyledNavLink to="/zadania">Zadania</StyledNavLink>
+          <StyledNavLink to={toTasks()}>Zadania</StyledNavLink>
         </Li>
         <Li>
           {" "}
-          <StyledNavLink to="/autor">O autorze</StyledNavLink>
+          <StyledNavLink to={toAuthor()}>O autorze</StyledNavLink>
         </Li>
       </Ul>{" "}
     </Nav>
