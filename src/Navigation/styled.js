@@ -32,4 +32,8 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
   &.${activeClassName} {
     font-weight: bold;
   }
+
+  &:hover {
+    border-bottom: 1px solid;
+  }
 `;
