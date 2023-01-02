@@ -21,7 +21,7 @@ The project I make during FrondEndDeveloper course: https://youcode.pl/frontend-
 
 ## Demo
 
-![Demonstration](demo2.gif)
+![Demonstration](demo.gif)
 
 ## Technologies used
 - html
@@ -40,6 +40,7 @@ The project I make during FrondEndDeveloper course: https://youcode.pl/frontend-
 - redux
 - saga
 - react router
+- redux toolkit
 
 ## Getting Started with Create React App
 
