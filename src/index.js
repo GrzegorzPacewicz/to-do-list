@@ -4,7 +4,7 @@ import App from "./App";
 import { Provider } from "react-redux";
 import { theme } from "./theme";
 import { ThemeProvider } from "styled-components";
-import { GlobalStyle } from "./Globalstyle";
+import { GlobalStyle } from "./globalstyle";
 import store from "./store";
 import reportWebVitals from "./reportWebVitals";
 
